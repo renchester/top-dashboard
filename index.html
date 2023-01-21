@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Archivo&family=Nunito+Sans&family=Playfair+Display&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
     <link rel="stylesheet" href="style.css" />
 
     <title>Dashboard: Renchester</title>
@@ -19,15 +24,31 @@
     <div class="container">
       <nav class="nav-bar">
         <div class="logo">DASH</div>
-        <div class="nav-links">
-          <ul>
-            <li class="nav-link nav-link--1">Dashboard</li>
-            <li class="nav-link nav-link--2">Messages</li>
-            <li class="nav-link nav-link--3">Events</li>
-            <li class="nav-link nav-link--4">Profile</li>
-            <li class="nav-link nav-link--5">Settings</li>
-          </ul>
+
+        <div class="nav-icon nav-icon--1">
+          <span class="material-symbols-outlined"> home </span>
         </div>
+        <div class="nav-link nav-link--1">Dashboard</div>
+
+        <div class="nav-icon nav-icon--2">
+          <span class="material-symbols-outlined"> mail </span>
+        </div>
+        <div class="nav-link nav-link--2">Messages</div>
+
+        <div class="nav-icon nav-icon--3">
+          <span class="material-symbols-outlined"> event </span>
+        </div>
+        <div class="nav-link nav-link--3">Events</div>
+
+        <div class="nav-icon nav-icon--4">
+          <span class="material-symbols-outlined"> group </span>
+        </div>
+        <div class="nav-link nav-link--4">Profiles</div>
+
+        <div class="nav-icon nav-icon--5">
+          <span class="material-symbols-outlined"> settings </span>
+        </div>
+        <div class="nav-link nav-link--5">Settings</div>
       </nav>
 
       <header>
@@ -37,13 +58,15 @@
           id="search_bar"
           placeholder="Search here"
         />
-        <div class="notification-bell"></div>
-        <div class="profile">
-          <div class="profile-pic"></div>
-          <div class="profile-name">Renchester Ramos</div>
+        <div class="notification-bell">
+          <span class="material-symbols-outlined"> notifications_active </span>
         </div>
+        <div class="profile-pic"></div>
 
-        <div class="greeting"></div>
+        <div class="greeting">
+          <span class="greeting-desc">Good morning,</span>
+          <span class="greeting-name">Chester!</span>
+        </div>
         <div class="header--nav">
           <button class="btn-new" type="button">New</button>
           <button class="btn-upload" type="button">Upload</button>
@@ -54,15 +77,167 @@
       <main>
         <div class="projects">
           <div class="label projects-label">Projects</div>
+          <div class="projects-container">
+            <!--  -->
+            <div class="project--card project-rps">
+              <div class="project-rps project-preview">
+                <a
+                  href="https://renchester.github.io/top-rock-paper-scissors/"
+                  target="_blank"
+                >
+                  <img
+                    class="project-window"
+                    src="img/top-rps.png"
+                    alt="Project window"
+                /></a>
+                <div class="project-title">Rock Paper Scissors</div>
+                <div class="project-desc">
+                  A rock-paper-scissors web app/game to exercise HTML, CSS, and
+                  Javascript skills from the Odin Project
+                </div>
+              </div>
+              <div class="project-rps btn-container">
+                <div class="project-rps add-star material-symbols-outlined">
+                  grade
+                </div>
+                <a
+                  href="https://github.com/renchester/top-rock-paper-scissors"
+                  target="_blank"
+                >
+                  <div class="project-rps view-code material-symbols-outlined">
+                    code
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!--  -->
+            <div class="project--card project-etch">
+              <div class="project-etch project-preview">
+                <a href="https://renchester.github.io/top-etch-a-sketch/">
+                  <img
+                    class="project-window"
+                    src="img/top-etch.png"
+                    alt="Project window"
+                /></a>
+                <div class="project-title">Etch-a-sketch</div>
+                <div class="project-desc">
+                  A light-weight drawing webapp built with HTML, CSS, and
+                  vanilla JavaScript.
+                </div>
+              </div>
+              <div class="project-etch btn-container">
+                <div class="project-etch add-star material-symbols-outlined">
+                  grade
+                </div>
+                <a
+                  href="https://github.com/renchester/top-etch-a-sketch"
+                  target="_blank"
+                >
+                  <div class="project-etch view-code material-symbols-outlined">
+                    code
+                  </div></a
+                >
+              </div>
+            </div>
+            <!--  -->
+            <div class="project--card project-calculator">
+              <div class="project-calculator project-preview">
+                <a
+                  href="https://renchester.github.io/top-calculator/"
+                  target="_blank"
+                >
+                  <img
+                    class="project-window"
+                    src="img/top-calculator.png"
+                    alt="Project window"
+                /></a>
+                <div class="project-title">Calculator</div>
+                <div class="project-desc">
+                  A simple calculator project built with JavaScript, HTML, and
+                  CSS for the Odin Project Foundations course
+                </div>
+              </div>
+              <div class="project-calculator btn-container">
+                <div
+                  class="project-calculator add-star material-symbols-outlined"
+                >
+                  grade
+                </div>
+                <a
+                  href="https://github.com/renchester/top-calculator"
+                  target="_blank"
+                >
+                  <div
+                    class="project-calculator view-code material-symbols-outlined"
+                  >
+                    code
+                  </div></a
+                >
+              </div>
+            </div>
+            <!--  -->
+          </div>
         </div>
         <div class="announcements">
           <div class="label announcements-label">Announcements</div>
+          <div class="announcement-container">
+            <div class="announcement-card">
+              <div class="announcement-label">Site Maintenance</div>
+              <div class="announcement-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                aspernatur, at ex cumque quibusdam ea atque sit exercitationem!
+              </div>
+            </div>
+            <div class="announcement-card">
+              <div class="announcement-label">Community Share Day</div>
+              <div class="announcement-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="events">
+
+        <!-- <div class="events">
           <div class="label events-label">Events</div>
-        </div>
+        </div> -->
         <div class="trending">
           <div class="label trending-label">Trending</div>
+
+          <div class="trending-container">
+            <div class="trending-card">
+              <span class="material-symbols-outlined">tag</span>
+              <div class="trending-profile">
+                <span class="trending-title">@tegan</span>
+                <span class="trending-desc"> World Peace Builder </span>
+              </div>
+            </div>
+
+            <div class="trending-card">
+              <span class="material-symbols-outlined">tag</span>
+              <div class="trending-profile">
+                <span class="trending-title">#ManilaQuake</span>
+                <span class="trending-desc">
+                  Earthquakes in the Philippines
+                </span>
+              </div>
+            </div>
+
+            <div class="trending-card">
+              <span class="material-symbols-outlined">tag</span>
+              <div class="trending-profile">
+                <span class="trending-title">#NewMusic</span>
+                <span class="trending-desc"> Check out the latest hits!</span>
+              </div>
+            </div>
+
+            <div class="trending-card">
+              <span class="material-symbols-outlined">tag</span>
+              <div class="trending-profile">
+                <span class="trending-title">#TechNews</span>
+                <span class="trending-desc"> Latest in the world of tech </span>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
