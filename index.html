@@ -52,20 +52,27 @@
       </nav>
 
       <header>
-        <input
-          type="search"
-          name="search_result"
-          id="search_bar"
-          placeholder="Search here"
-        />
+        <div class="search-bar-container">
+          <span class="material-symbols-outlined"> search </span>
+          <input
+            type="search"
+            name="search_result"
+            id="search_bar"
+            placeholder="Search here"
+          />
+        </div>
         <div class="notification-bell">
           <span class="material-symbols-outlined"> notifications_active </span>
         </div>
-        <div class="profile-pic"></div>
+        <img class="profile-pic" src="img/prof-pic.jpg" alt="Profile pic" />
 
         <div class="greeting">
-          <span class="greeting-desc">Good morning,</span>
-          <span class="greeting-name">Chester!</span>
+          <img src="img/prof-pic.jpg" alt="Profile pic" />
+
+          <div class="greeting-text">
+            <span class="greeting-desc">Good day,</span>
+            <span class="greeting-name">Chester (@renchester)</span>
+          </div>
         </div>
         <div class="header--nav">
           <button class="btn-new" type="button">New</button>
